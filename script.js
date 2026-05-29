@@ -1,56 +1,107 @@
-const questionElement = document.getElementById("question");
-const bouton1 = document.getElementById("bouton1");
-const bouton2 = document.getElementById("bouton2");
-const bouton3 = document.getElementById("bouton3");
-const boutonChance = document.getElementById("boutonChance");
+// ---- Éléments ----
 const questionContainer = document.getElementById("question-container");
+const questionElement = document.getElementById("question");
+const categoryBadge = document.getElementById("category-badge");
+const passer = document.getElementById("passer");
+const passHint = document.getElementById("pass-hint");
+const boutonChance = document.getElementById("boutonChance");
+
+// Libellés affichés dans le badge (la donnée garde "Ton manager")
+const DISPLAY = {
+    "Carrière": "Carrière",
+    "Équilibre pro/perso": "Équilibre pro/perso",
+    "Ton manager": "Ton référent",
+    "Reconnaissance": "Reconnaissance"
+};
 
 let questions = [];
 
-// Fonction pour charger les questions depuis le fichier CSV
+// État de session du bouton Passer
+let mode = null;          // "category" | "lucky"
+let currentCategory = null;
+let currentText = null;
+let passUsed = false;
+
+// ---- Chargement CSV (PapaParse) ----
 function chargerQuestions() {
-  Papa.parse("questions.csv", { 
-    download: true, 
-    header: true, 
-    dynamicTyping: true, 
-    complete: function(results) { 
-      questions = results.data;
-    },
-    error: function(error) {
-      console.error("Erreur lors du chargement des questions:", error);
+    Papa.parse("questions.csv", {
+        download: true,
+        header: true,
+        dynamicTyping: true,
+        delimiter: ";",
+        skipEmptyLines: true,
+        complete: function (results) {
+            questions = results.data.filter(q => q && q.Question);
+        },
+        error: function (error) {
+            console.error("Erreur lors du chargement des questions:", error);
+        }
+    });
+}
+
+// ---- Tirage ----
+function tirer(pool, exclure) {
+    let candidats = pool;
+    if (candidats.length > 1 && exclure) {
+        candidats = candidats.filter(q => q.Question !== exclure);
     }
-  });
+    return candidats[Math.floor(Math.random() * candidats.length)];
+}
+
+function afficher(q) {
+    if (!q) {
+        questionElement.textContent = "Aucune question disponible pour cette catégorie.";
+        categoryBadge.textContent = "";
+        questionContainer.classList.add("is-visible");
+        return;
+    }
+    currentText = q.Question;
+    questionElement.textContent = q.Question;
+    categoryBadge.textContent = DISPLAY[q.Catégorie] || q.Catégorie;
+    questionContainer.classList.add("is-visible");
+}
+
+// Réarme l'esquive à chaque nouveau clic sur un bouton
+function reinitEsquive() {
+    passUsed = false;
+    passer.disabled = false;
+    passHint.textContent = "1 esquive disponible";
 }
 
 function afficherQuestionAleatoire(categorie) {
-  questionContainer.style.display = "block";
-  const questionsFiltrees = questions.filter(question => question.Catégorie === categorie && question.Afficher); // Filtre les questions par catégorie et par statut "Afficher"
-
-  if (questionsFiltrees.length > 0) {
-    const randomIndex = Math.floor(Math.random() * questionsFiltrees.length);
-    questionElement.textContent = questionsFiltrees[randomIndex].Question;
-  } else {
-    questionElement.textContent = "Aucune question disponible pour cette catégorie.";
-  }
+    mode = "category";
+    currentCategory = categorie;
+    const pool = questions.filter(q => q.Catégorie === categorie && q.Afficher);
+    afficher(tirer(pool));
+    reinitEsquive();
 }
 
 function afficherQuestionAleatoireToutesCategories() {
-  questionContainer.style.display = "block";
-  const questionsAffichees = questions.filter(question => question.Afficher); // Filtre uniquement les questions avec "Afficher": true
-
-  if (questionsAffichees.length > 0) {
-    const randomIndex = Math.floor(Math.random() * questionsAffichees.length);
-    questionElement.textContent = questionsAffichees[randomIndex].Question;
-  } else {
-    questionElement.textContent = "Aucune question disponible.";
-  }
+    mode = "lucky";
+    currentCategory = null;
+    const pool = questions.filter(q => q.Afficher);
+    afficher(tirer(pool));
+    reinitEsquive();
 }
 
-// Chargement des questions au chargement de la page
+// ---- Passer (1 esquive par session de bouton) ----
+function passerQuestion() {
+    if (passUsed) return;
+    // Lucky -> toutes catégories ; sinon -> même catégorie que la question affichée
+    const pool = mode === "lucky"
+        ? questions.filter(q => q.Afficher)
+        : questions.filter(q => q.Catégorie === currentCategory && q.Afficher);
+    afficher(tirer(pool, currentText));
+    passUsed = true;
+    passer.disabled = true;
+    passHint.textContent = "Esquive utilisée";
+}
+
+// ---- Init ----
 chargerQuestions();
 
-// Écouteurs d'événements pour les boutons
-bouton1.addEventListener("click", () => afficherQuestionAleatoire("Carrière"));
-bouton2.addEventListener("click", () => afficherQuestionAleatoire("Équilibre pro/perso"));
-bouton3.addEventListener("click", () => afficherQuestionAleatoire("Ton manager"));
+document.querySelectorAll(".cat-btn").forEach(btn => {
+    btn.addEventListener("click", () => afficherQuestionAleatoire(btn.dataset.cat));
+});
 boutonChance.addEventListener("click", afficherQuestionAleatoireToutesCategories);
+passer.addEventListener("click", passerQuestion);

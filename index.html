@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Referandom - This app helps you select random questions to ask your referees !</title>
+    <title>Referandom</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,16 +11,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="background"></div>
-    <div id="button-container">
-        <button id="bouton1">Ta carrière</button>
-        <button id="bouton2">Ton équilibre pro/perso</button>
-        <button id="bouton3">Ton référent</button>
-        <button id="boutonChance">J'ai de la chance</button>
+    <div id="app">
+        <p id="intro">Sélectionne une catégorie pour générer une question de discussion.</p>
+
+        <div id="button-container">
+            <button class="cat-btn" data-cat="Carrière">Ta carrière</button>
+            <button class="cat-btn" data-cat="Équilibre pro/perso">Ton équilibre pro/perso</button>
+            <button class="cat-btn" data-cat="Ton manager">Ton référent</button>
+            <button id="boutonChance">J'ai de la chance</button>
+        </div>
+
+        <div id="question-container">
+            <span id="category-badge"></span>
+            <p id="question"></p>
+            <div class="pass-row">
+                <button id="passer" type="button">
+                    <svg class="ico" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="13 19 22 12 13 5"></polygon><polygon points="2 19 11 12 2 5"></polygon></svg>
+                    <span>Passer</span>
+                </button>
+                <span id="pass-hint"></span>
+            </div>
+        </div>
     </div>
-    <div id="question-container">
-        <p id="question"></p>
-    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

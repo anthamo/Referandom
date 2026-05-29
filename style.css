@@ -1,67 +1,183 @@
+:root {
+    --turquoise: #20B2AA;
+    --turquoise-dark: #1c9d96;
+    --bg: #f4f5f9;
+    --blue: #4285f4;
+    --blue-dark: #357ae8;
+    --ink: #2b2b2b;
+    --muted: #5b6170;
+    --hint: #8a8f9c;
+    --card-border: #E3E5EE;
+    --divider: #ECEEF3;
+    --btn-border: #D5D8E0;
+}
+
+* { box-sizing: border-box; }
+
+/* Notion-embed friendly : hauteur auto, pas de min-height:100vh, pas de overflow:hidden. */
 body {
     font-family: 'Maven Pro', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     margin: 0;
-    overflow: hidden;
-    background-color: #f4f5f9;
+    padding: 24px 16px;
+    background-color: var(--bg);
+    color: var(--ink);
+    display: flex;
+    justify-content: center;
 }
 
+/* Carte conteneur (le cadre du sketch) */
+#app {
+    width: 100%;
+    max-width: 720px;
+    background-color: #fff;
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(20, 24, 40, 0.04);
+}
+
+#intro {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--muted);
+    margin: 0 0 18px;
+    text-wrap: pretty;
+}
+
+/* ---------- Boutons catégories + chance (une seule ligne) ---------- */
 #button-container {
     display: flex;
+    flex-wrap: nowrap;
     gap: 10px;
-    margin-bottom: 20px;
 }
 
-button {
-    padding: 16px 16px;
-    border: none;
+.cat-btn,
+#boutonChance {
+    font-family: inherit;
+    flex: 1;
+    padding: 13px 12px;
     border-radius: 10px;
-    background-color: white;
-    color: #20B2AA;
-    border: solid 1px #20B2AA;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.25;
+    white-space: nowrap;
     cursor: pointer;
-    transition: background-color 0.2s, box-shadow 0.2s;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
-button:hover {
-    background-color: #20B2AA;
-    color: white;
+.cat-btn {
+    background-color: #fff;
+    color: var(--turquoise);
+    border: 1px solid var(--turquoise);
+}
+
+.cat-btn:hover {
+    background-color: var(--turquoise);
+    color: #fff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
 }
 
-button:active {
-    background-color: #ddd;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
+.cat-btn:active { transform: translateY(1px); }
 
+/* Bouton "J'ai de la chance" — bleu Google, inchangé (intentionnel) */
 #boutonChance {
     border: none;
-    background-color: #4285f4;
-    color: white;
+    background-color: var(--blue);
+    color: #fff;
 }
 
 #boutonChance:hover {
-    background-color: #357ae8;
+    background-color: var(--blue-dark);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
 }
 
+/* ---------- Zone question — barre d'accent à gauche, posée à plat ---------- */
 #question-container {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 0 20px;
-    box-shadow: 0 0 0 1px #E3E5EE inset;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 600px;
+    margin-top: 18px;
+    padding: 4px 0 4px 16px;
+    border-left: 3px solid var(--turquoise);
     display: none;
+    flex-direction: column;
+}
+
+#question-container.is-visible { display: flex; }
+
+#category-badge {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    color: var(--turquoise);
+    white-space: nowrap;
+    align-self: flex-start;
 }
 
 #question {
-    font-size: 16px;
-    font-weight: 300;
-    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.45;
+    color: var(--ink);
+    margin: 10px 0 0;
+    text-wrap: pretty;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid var(--divider);
+    width: 100%;
+    margin: 16px 0;
+}
+
+/* ---------- Ligne Passer + indice ---------- */
+.pass-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+#passer {
+    font-family: inherit;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 16px;
+    border: 1px solid var(--btn-border);
+    border-radius: 8px;
+    background-color: #fff;
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s, background-color 0.2s;
+}
+
+#passer .ico { flex: none; }
+
+#passer:hover:not(:disabled) {
+    border-color: var(--turquoise);
+    color: var(--turquoise);
+}
+
+#passer:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+#pass-hint {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--hint);
+    white-space: nowrap;
+    text-align: right;
+}
+
+/* ---------- Étroit (≤ 430px) : on garde tout lisible ---------- */
+@media (max-width: 480px) {
+    #button-container { flex-wrap: wrap; }
+    .cat-btn,
+    #boutonChance { flex: 1 1 calc(50% - 5px); white-space: normal; padding: 12px 8px; font-size: 12px; }
+    #question { font-size: 17px; }
 }
