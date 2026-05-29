@@ -1,6 +1,6 @@
 # Referandom
 
-![[screenshot.png]]
+![[assets/screenshot.png]]
 
 Les 1-1 entre référant et référé dérivent facilement vers l'opérationnel. Les sujets du moment, les blocages immédiats. Pourtant, ce qui compte vraiment dans ce cadre, c'est la progression, l'équilibre, la relation elle-même.
 
