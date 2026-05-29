@@ -1,23 +1,19 @@
 # Referandom
 
-Un générateur de questions aléatoires pour les 1-1 entre référant et référé.
+Les 1-1 entre référant et référé dérivent facilement vers l'opérationnel. Les sujets du moment, les blocages immédiats. Ce qui compte vraiment — la progression, l'équilibre, la relation elle-même — passe rarement en premier.
 
-## Pourquoi
-
-Les 1-1 dérivent facilement vers l'opérationnel — les sujets du moment, les blocages immédiats. Referandom sert à sortir de ce pattern : une question tirée au hasard, choisie dans une base thématique, force une ouverture qu'on ne s'autoriserait pas spontanément.
-
-L'outil n'est pas là pour remplacer la conversation. Il en est le point de départ.
+Referandom tire une question au hasard dans une base thématique. Pas de question prévue, pas de question contrôlée : c'est précisément ce qui force l'ouverture.
 
 ## Utilisation
 
-Choisir une thématique parmi :
+Choisir une thématique :
 
 - **Ta carrière** — objectifs, développement, sens du travail
 - **Ton équilibre pro/perso** — charge, énergie, vie hors travail
 - **Ton référent** — feedback sur la relation, la posture, le style de management
 - **J'ai de la chance** — pioche dans toutes les catégories
 
-Une question s'affiche. Le référé peut l'esquiver une fois par session — ce qui est en soi une information utile pour le référant.
+Une question s'affiche. Le référé peut l'esquiver une fois par session. Ce qui est, en soi, une information utile pour le référant.
 
 ## Stack
 
@@ -40,14 +36,9 @@ Mettre `Afficher` à `FALSE` pour masquer une question sans la supprimer.
 
 ## Contribuer
 
-Les questions sont le cœur de l'outil — et elles peuvent toujours être améliorées.
+Les questions sont le cœur de l'outil. Si tu en as de meilleures à proposer, des formulations à retravailler ou des catégories à suggérer : ouvre une [issue](https://github.com/anthamo/anthamo.github.io/issues) ou soumets une pull request directement sur `questions.csv`.
 
-Si tu utilises Referandom et que tu as des questions à proposer, des formulations à améliorer, ou des catégories à suggérer : ouvre une [issue](https://github.com/anthamo/anthamo.github.io/issues) ou soumets une pull request en éditant directement `questions.csv`.
-
-Quelques critères pour qu'une question soit pertinente :
-- Elle ne trouve pas sa réponse en 5 secondes
-- Elle ouvre un sujet qu'on n'aurait pas abordé spontanément
-- Elle fonctionne quel que soit le secteur ou le niveau hiérarchique
+Une bonne question : elle ne trouve pas sa réponse en cinq secondes, elle ouvre un sujet qu'on n'aurait pas abordé spontanément, elle fonctionne quel que soit le secteur ou le niveau hiérarchique.
 
 ## Intégration Notion
 
