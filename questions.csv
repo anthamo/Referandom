@@ -1,120 +1,111 @@
 Question;Catégorie;Afficher
-Y a-t-il des obstacles que je peux enlever pour toi ?;Ton manager;TRUE
-En tant que ton manager, qu'aimerais-tu que j'arrête, commence, ou continue à faire ?;Ton manager;TRUE
-À quel moment, la semaine dernière, as-tu été le plus frustré ou découragé par ton travail ? Que puis-je faire pour t'aider à gérer cela ?;Ton manager;TRUE
-Penses-tu recevoir suffisamment de feedbacks ? Pourquoi/pourquoi pas ?;Ton manager;TRUE
-Est-ce que les feedbacks sont utiles pour ton développement personnel ? Que puis-je faire pour les améliorer ?;Ton manager;TRUE
+Y a-t-il des freins que je peux lever pour toi ?;Ton manager;TRUE
+En tant que ton référent, qu'aimerais-tu que j'arrête, commence, ou continue à faire ?;Ton manager;TRUE
+À quel moment la semaine dernière as-tu été le plus frustré·e par ton travail ?;Ton manager;TRUE
+Penses-tu recevoir suffisamment de feedbacks ? Pourquoi ?;Ton manager;TRUE
+Les feedbacks que tu reçois sont-ils utiles pour toi ? Que puis-je faire pour les améliorer ?;Ton manager;TRUE
 Comment puis-je mieux te soutenir ?;Ton manager;TRUE
 Comment puis-je rendre tes journées plus épanouissantes ?;Ton manager;TRUE
 Comment pourrais-je mieux communiquer avec toi ?;Ton manager;TRUE
-Comment puis-je rendre tes sujets plus stimulant ou intéressant pour toi ?;Ton manager;TRUE
-J'aimerais m'améliorer en tant que manager et j'aurais vraiment besoin de ton aide. Serais-tu prêt à me donner un feedback la semaine prochaine sur une ou deux choses que je pourrais faire mieux en tant que ton manager ?;Ton manager;TRUE
+Comment puis-je rendre tes sujets plus stimulants pour toi ?;Ton manager;TRUE
+Sur une ou deux choses concrètes, qu'est-ce que je pourrais faire mieux en tant que ton référent ?;Ton manager;TRUE
 Si tu étais à ma place, quels changements ferais-tu ?;Ton manager;TRUE
-J'essaie d'améliorer mes 1-to-1 et j'apprécierais ton avis honnête sur celui-ci : qu'est-ce que tu apprécies et qu'est-ce qui pourrait être amélioré ?;Ton manager;TRUE
-Quelles ressources supplémentaires puis-je te fournir d'ici notre prochaine réunion ?;Ton manager;TRUE
-Quelles sont tes impressions sur nos 1-to-1 ? Que pourrions-nous faire différemment ou mieux ?;Ton manager;TRUE
+Qu'est-ce que tu apprécies dans nos 1-to-1 ? Qu'est-ce qui pourrait être amélioré ?;Ton manager;TRUE
+De quelles ressources as-tu besoin d'ici notre prochaine réunion ?;Ton manager;TRUE
 Sur quel aspect de ton travail aimerais-tu que je t'aide davantage ?;Ton manager;TRUE
 Sur quels aspects de ton travail aimerais-tu que je te donne plus ou moins de direction ?;Ton manager;TRUE
-Que puis-je faire de mieux pour t'aider dans ton travail ?;Ton manager;TRUE
 Que puis-je faire pour toi que je ne fais pas encore ?;Ton manager;TRUE
-Que puis-je faire pour aider à limiter les obstacles que tu rencontres ?;Ton manager;TRUE
-Que puis-je faire pour t'aider à atteindre tes objectifs et priorités actuels ?;Ton manager;TRUE
-Que puis-je faire pour t'aider à apprécier davantage ton travail ou enlever les obstacles à ta progression ?;Ton manager;TRUE
+Que puis-je faire pour t'aider à atteindre tes objectifs actuels ?;Ton manager;TRUE
 Qu'est-ce que tu aimes dans mon style de référent ? Qu'est-ce que tu n'aimes pas ?;Ton manager;TRUE
-Qu'est-ce que je devrais savoir sur tes enjeux, mais que je ne sais peut-être pas ?;Ton manager;TRUE
-Qu'ont fait tes anciens managers que tu aimerais que je fasse ou ne fasse pas ?;Ton manager;TRUE
-Quelle est la chose que j'aurais pu mieux faire ? Y a-t-il des situations où j'aurais pu t'aider davantage mais où je ne l'ai pas fait ?;Ton manager;TRUE
-Quel est le plus grand défi que tu affrontes actuellement ? Comment puis-je t'aider avec ça ?;Ton manager;TRUE
-Quelle est la chose dont tu as le plus besoin de ma part ?;Ton manager;TRUE
-Que penses-tu de mon implication dans tes tâches quotidiennes ? Préférerais-tu plus ou moins ?;Ton manager;TRUE
-Qu'aimerais-tu savoir à propos de moi ?;Ton manager;TRUE
-Qu'aimerais-tu voir changer dans nos 1:1 ? Comment pourrions-nous les rendre plus utiles pour toi ?;Ton manager;TRUE
-Quelle est ta chose préférée que je fais en tant que Lead du cercle que je devrais continuer à faire ?;Ton manager;TRUE
-Où penses-tu que je peux être le plus utile ?;Ton manager;TRUE
-Sur quels aspects aimerais-tu que je te donne plus ou moins de direction dans ton travail ?;Ton manager;TRUE
-Aimerais-tu plus de coaching ? Sur quel aspect de ton travail aimerais-tu avoir plus d'aide et de coaching ?;Ton manager;TRUE
-Y a-t-il des événements ou des formations auxquels tu aimerais assister pour développer tes compétences ?;Carrière;TRUE
-Y a-t-il des projets sur lesquels tu aimerais vraiment travailler si tu en avais l'opportunité ?;Carrière;TRUE
-Te vois-tu progresser davantage sur tes objectifs pro chez Carbo ? Que faudrait-il changer pour que ce soit le cas ?;Carrière;TRUE
-As-tu l'impression d'apprendre au travail ? Quelles sont les nouvelles choses que tu as apprises récemment ? Quels sont les domaines que tu souhaites approfondir ?;Carrière;TRUE
-Penses-tu que tu fais des progrès sur tes objectifs pro ici ? Pourquoi ou pourquoi pas ?;Carrière;TRUE
+Qu'est-ce que je devrais savoir sur tes enjeux actuels, mais que je ne sais peut-être pas ?;Ton manager;TRUE
+Qu'ont fait tes anciens managers que tu aimerais que je fasse ou que j'évite ?;Ton manager;TRUE
+Y a-t-il des situations récentes où j'aurais pu t'aider davantage mais où je ne l'ai pas fait ?;Ton manager;TRUE
+Quel est le plus grand défi que tu affrontes en ce moment ?;Ton manager;TRUE
+De quoi as-tu le plus besoin de ma part en ce moment ?;Ton manager;TRUE
+Mon niveau d'implication dans ton quotidien te convient-il ? Trop présent, pas assez ?;Ton manager;TRUE
+Qu'aimerais-tu savoir sur moi que tu ne sais pas encore ?;Ton manager;TRUE
+Qu'aimerais-tu voir changer dans nos 1:1 pour qu'ils te soient plus utiles ?;Ton manager;TRUE
+Qu'est-ce que je fais bien en tant que référent et que tu aimerais que je continue ?;Ton manager;TRUE
+Où penses-tu que je peux être le plus utile pour toi ?;Ton manager;TRUE
+Aimerais-tu plus de coaching ? Sur quel aspect en particulier ?;Ton manager;TRUE
+Y a-t-il quelque chose dans notre façon de travailler ensemble que tu aimerais changer de ton côté ?;Ton manager;TRUE
+Est-ce qu'il t'arrive de ne pas oser me dire quelque chose ? Pourquoi ?;Ton manager;TRUE
+Y a-t-il des formations ou événements auxquels tu aimerais participer pour développer tes compétences ?;Carrière;TRUE
+Y a-t-il des projets sur lesquels tu aimerais travailler si tu en avais l'opportunité ?;Carrière;TRUE
+As-tu l'impression d'apprendre au travail en ce moment ? Quels domaines aimerais-tu approfondir ?;Carrière;TRUE
+Penses-tu faire des progrès sur tes objectifs pro ? Pourquoi ou pourquoi pas ?;Carrière;TRUE
 As-tu l'impression que nous t'aidons à faire avancer ta carrière à un rythme qui te convient ?;Carrière;TRUE
 As-tu les outils nécessaires pour atteindre tes objectifs pro ?;Carrière;TRUE
-T'es-tu déjà senti sous-évalué chez Carbo ?;Carrière;TRUE
-As-tu réfléchi à tes objectifs à long terme dernièrement ?;Carrière;TRUE
-Comment penses-tu que tu progresses dans ta carrière ?;Carrière;TRUE
-Comment perçois-tu ta progression sur tes grands objectifs ? Que faut-il faire pour avancer vers ces objectifs ? Que pouvons-nous faire pour t'aider ?;Carrière;TRUE
+T'es-tu déjà senti·e sous-évalué·e ici ?;Carrière;TRUE
+Comment tu perçois ta progression dans ta carrière en ce moment ?;Carrière;TRUE
+Comment perçois-tu ta progression sur tes grands objectifs ? Qu'est-ce qui t'aiderait à avancer ?;Carrière;TRUE
 En quoi ton travail actuel aide-t-il ou nuit-il à ton développement professionnel ?;Carrière;TRUE
 Si tu devais créer ton poste idéal, en quoi serait-il différent de ce que tu fais actuellement ?;Carrière;TRUE
-Imagine que nous sommes dans deux ans et que tout s'est bien passé : Quel a été ton rôle dans cela ? À quoi ressemble ton rôle ?;Carrière;TRUE
-Y a-t-il une autre manière de développer tes compétences en dehors des formations traditionnelles ?;Carrière;TRUE
-Y a-t-il un aspect de ton travail sur lequel tu aimerais plus d'aide ou de coaching ?;Carrière;TRUE
+Dans deux ans, si tout s'est bien passé : à quoi ressemble ton rôle ? Qu'est-ce que tu as accompli ?;Carrière;TRUE
+Y a-t-il une autre manière de développer tes compétences en dehors des formations classiques ?;Carrière;TRUE
+Y a-t-il un aspect de ton travail sur lequel tu aimerais plus de coaching ?;Carrière;TRUE
 Parle-moi de quelque chose de nouveau que tu as appris depuis notre dernière rencontre.;Carrière;TRUE
-Qu'est-ce qui est important pour toi dans cet objectif et qu'est-ce qui sera différent une fois que tu l'auras atteint ?;Carrière;TRUE
 Quelles actions vas-tu entreprendre avant notre prochain 1-to-1 pour avancer sur X ? (Discuter et se mettre d'accord sur les actions que je prendrai pour t'aider également.);Carrière;FALSE
 Quels sont les projets dont tu es le plus fier, et qu'aimerais-tu faire ensuite ?;Carrière;TRUE
-Quels sont les projets auxquels tu serais intéressé de travailler ensuite ?;Carrière;TRUE
-Quelles sont deux ou trois nouvelles compétences que tu aimerais apprendre au travail ? Qu'est-ce qui t'intéresse dans ces compétences ?;Carrière;TRUE
+Quelles nouvelles compétences aimerais-tu développer au travail ? Qu'est-ce qui t'attire dans ces compétences ?;Carrière;TRUE
 Quels sont tes grands rêves dans la vie ? Fais-tu des progrès pour les réaliser ?;Carrière;TRUE
-Quels sont tes objectifs (pour notre groupe, pour toi personnellement) ?;Carrière;TRUE
-Quels sont tes objectifs à long terme ? Y as-tu réfléchi ?;Carrière;TRUE
+Quels sont tes objectifs à long terme ? Y as-tu réfléchi récemment ?;Carrière;TRUE
 Quels sont tes superpouvoirs ? Quels pouvoirs aimerais-tu développer ?;Carrière;TRUE
-Quels aspects de ton travail trouves-tu difficiles et pour lesquels acquérir de meilleures compétences pourrait t'aider ?;Carrière;TRUE
-Quelles grandes questions as-tu sur tes opportunités de carrière à l'avenir ?;Carrière;TRUE
-Quelles capacités veux-tu développer ?;Carrière;TRUE
-Quels domaines de développement veux-tu travailler dans les semaines à venir ?;Carrière;TRUE
-Que veux-tu faire dans 5 ans ? 10 ans ? 3 ans ?;Carrière;TRUE
-Que veux-tu faire dans ton prochain emploi ?;Carrière;TRUE
-Que puis-je faire d'autre pour t'aider à évoluer/avancer dans ta carrière ?;Carrière;TRUE
+Sur quels aspects de ton travail aimerais-tu monter en compétences ?;Carrière;TRUE
+Quelles grandes questions tu te poses sur ta carrière en ce moment ?;Carrière;TRUE
+Dans 3 ans, 5 ans, 10 ans, où tu te vois ?;Carrière;TRUE
+Que puis-je faire d'autre pour t'aider à avancer dans ta carrière ?;Carrière;TRUE
 Quelle formation ou expérience serait la plus utile pour toi en ce moment ?;Carrière;TRUE
-Quelles opportunités as-tu eues récemment d'apprendre quelque chose de nouveau ?;Carrière;TRUE
-Quels autres rôles ici te vois-tu occuper à l'avenir ? Ou quels domaines aimerais-tu explorer ?;Carrière;TRUE
-Quelles parties de ton travail aimerais-tu approfondir ou recevoir une formation supplémentaire ?;Carrière;TRUE
-Quels objectifs professionnels aimerais-tu atteindre dans les 6 à 12 prochains mois, et pourquoi dis-tu cela ?;Carrière;TRUE
-Quelles compétences as-tu qui, selon toi, sont sous-utilisées ?;Carrière;TRUE
-Quelles compétences aimerais-tu développer en ce moment ?;Carrière;TRUE
-Qu'est-ce qui ferait de ton job chez Carbo, le job parfait ?;Carrière;TRUE
-Qu'aimerais-tu apprendre à l'avenir ?;Carrière;TRUE
-Quelle est la seule chose que nous pourrions faire aujourd'hui pour t'aider à atteindre tes objectifs à long terme ?;Carrière;TRUE
-Où te vois-tu dans ta carrière dans 1 an, 3 ans ? Que peux-tu faire pour t'assurer d'atteindre ces objectifs ? Comment pouvons-nous (Carbo) t'aider à atteindre ces objectifs ?;Carrière;TRUE
+Quelles opportunités d'apprentissage as-tu eues depuis notre dernière rencontre ?;Carrière;TRUE
+Quels autres postes ou périmètres te vois-tu occuper à l'avenir ? Ou quels domaines aimerais-tu explorer ?;Carrière;TRUE
+Sur quelles parties de ton travail aimerais-tu approfondir tes compétences ou te former ?;Carrière;TRUE
+Quels objectifs professionnels veux-tu atteindre dans les 6 à 12 prochains mois ?;Carrière;TRUE
+Quelles compétences tu as qui, selon toi, sont sous-utilisées ?;Carrière;TRUE
+Qu'est-ce qui ferait de ton job ici le job parfait ?;Carrière;TRUE
+Quelle est la seule chose que nous pourrions faire pour t'aider à avancer vers tes objectifs à long terme ?;Carrière;TRUE
+Où tu te vois dans 1 an, 3 ans ? Qu'est-ce qui t'aiderait à y arriver ?;Carrière;TRUE
 Que puis-je faire pour t'aider à progresser dans ta carrière ?;Carrière;TRUE
 Qu'est-ce qui te manque dans ton rôle actuel ?;Carrière;TRUE
-Qu'est-ce que tu aimes ou n'aimes pas à propos de la manière dont nous abordons ton développement ici ?;Carrière;TRUE
-Qu'est-ce qui t'inquiète à propos de ta carrière ?;Carrière;TRUE
-Où te vois-tu dans deux ans ? Qu'aimeriez-vous faire d'ici là ?;Carrière;TRUE
-À quel moment dans ta carrière as-tu été le plus satisfait ? Pourquoi ?;Carrière;TRUE
-Y a-t-il un domaine dans lequel tu te sentirais plus en confiance avec une formation supplémentaire ?;Carrière;TRUE
-Y a-t-il d'autres cercles ou rôles ici auxquels tu aimerais t'exposer ?;Carrière;TRUE
-Y a-t-il quelque chose que je pourrais faire pour mieux t'aider à t'épanouir dans ton travail ?;Carrière;TRUE
-Y a-t-il quelque chose que je pourrais faire pour que tu te sentes mieux préparé pour atteindre tes objectifs ?;Carrière;TRUE
-Comment te sens-tu par rapport à ton travail ?;Équilibre pro/perso;TRUE
-Comment prévois-tu de concilier travail et vie personnelle cette année ?;Équilibre pro/perso;TRUE
-Comment puis-je t'aider à... ? (être plus productif/heureux au travail/apprécier davantage ton travail/etc.);Équilibre pro/perso;TRUE
-Que penses-tu de ton équilibre entre travail et vie personnelle ?;Équilibre pro/perso;TRUE
+Qu'est-ce que tu aimes ou n'aimes pas dans la façon dont nous abordons ton développement ici ?;Carrière;TRUE
+Qu'est-ce qui t'inquiète pour ta carrière en ce moment ?;Carrière;TRUE
+À quel moment dans ta carrière as-tu été le plus satisfait·e ? Pourquoi ?;Carrière;TRUE
+Y a-t-il un domaine où une formation t'aiderait à te sentir plus à l'aise ?;Carrière;TRUE
+Y a-t-il quelque chose que je pourrais faire pour que tu te sentes mieux préparé·e pour atteindre tes objectifs ?;Carrière;TRUE
+Qu'est-ce qui donne du sens à ton travail en ce moment ?;Carrière;TRUE
+Y a-t-il des tâches qui t'épuisent de façon disproportionnée par rapport au temps qu'elles prennent ?;Carrière;TRUE
+Comment tu te sens par rapport à ton travail en ce moment ?;Équilibre pro/perso;TRUE
+Comment tu prévois de concilier travail et vie personnelle cette année ?;Équilibre pro/perso;TRUE
+Y a-t-il quelque chose dans ton quotidien professionnel que tu aimerais simplifier ou supprimer ?;Équilibre pro/perso;TRUE
+Qu'est-ce qui t'aiderait à être plus efficace sans travailler plus ?;Équilibre pro/perso;TRUE
+Qu'est-ce qui t'aiderait à te sentir plus serein·e dans ton travail au quotidien ?;Équilibre pro/perso;TRUE
+Comment tu vis ton équilibre entre travail et vie personnelle en ce moment ?;Équilibre pro/perso;TRUE
 Comment est ta charge de travail en ce moment ?;Équilibre pro/perso;TRUE
-Si tu pouvais changer une chose à propos de ton travail aujourd'hui, qu'est-ce que tu changerais ?;Équilibre pro/perso;TRUE
+Si tu pouvais changer une chose dans ton travail aujourd'hui, ce serait quoi ?;Équilibre pro/perso;TRUE
 As-tu besoin de quelque chose de ma part ?;Équilibre pro/perso;TRUE
-Y a-t-il quelque chose avec lequel tu as des difficultés ?;Équilibre pro/perso;TRUE
-Y a-t-il quelque chose que tu aimerais faire pendant ton temps libre pour évacuer le stress, mais que tu ne parviens pas à faire ? Comment puis-je t'aider à atteindre ces objectifs personnels ?;Équilibre pro/perso;TRUE
+Y a-t-il quelque chose avec lequel tu as des difficultés en ce moment ?;Équilibre pro/perso;TRUE
+Y a-t-il quelque chose que tu aimerais faire hors travail pour décompresser, mais que tu ne parviens pas à faire ?;Équilibre pro/perso;TRUE
 Qu'est-ce qui te frustre au travail ?;Équilibre pro/perso;TRUE
 Qu'est-ce qui te satisfait le plus dans ton travail ?;Équilibre pro/perso;TRUE
-Quels sont les plus "grands gaspilleurs" de temps pour toi chaque semaine ?;Équilibre pro/perso;TRUE
-Quelles sont les choses les plus importantes sur lesquelles tu vas te concentrer avant notre prochaine rencontre ?;Équilibre pro/perso;TRUE
-Que fais-tu pour toi-même en dehors du travail ?;Équilibre pro/perso;TRUE
-Quels sont tes accomplissements les plus significatifs depuis notre dernière rencontre ?;Équilibre pro/perso;TRUE
-Dans quels domaines de ton travail te sens-tu confiant ?;Équilibre pro/perso;TRUE
-Que pourrions-nous changer au travail qui améliorerait le reste de ta vie ?;Équilibre pro/perso;TRUE
-Que fais-tu lorsque tu te sens à court d'énergie ou démotivé ?;Équilibre pro/perso;TRUE
-Qu'est-ce qui t'enthousiasme et te motive à travailler sur un projet ?;Équilibre pro/perso;TRUE
+Quels sont tes plus grands "gaspilleurs de temps" chaque semaine ?;Équilibre pro/perso;TRUE
+Quelles sont les priorités sur lesquelles tu vas te concentrer d'ici notre prochaine rencontre ?;Équilibre pro/perso;TRUE
+Que fais-tu pour toi en dehors du travail ?;Équilibre pro/perso;TRUE
+Quels sont tes accomplissements les plus importants depuis notre dernière rencontre ?;Équilibre pro/perso;TRUE
+Dans quels domaines de ton travail te sens-tu le plus confiant·e ?;Équilibre pro/perso;TRUE
+Qu'est-ce qu'on pourrait changer au travail qui améliorerait le reste de ta vie ?;Équilibre pro/perso;TRUE
+Que fais-tu quand tu te sens à plat ou démotivé·e ?;Équilibre pro/perso;TRUE
+Qu'est-ce qui t'enthousiasme le plus dans ton travail en ce moment ?;Équilibre pro/perso;TRUE
 Quels obstacles rencontres-tu en ce moment ?;Équilibre pro/perso;TRUE
-À quel moment de la journée as-tu le plus d'énergie et de concentration ? Quand en as-tu le moins ? Quels changements pourrions-nous apporter à ton emploi du temps pour en tenir compte ?;Équilibre pro/perso;TRUE
-Quelle partie de ta routine de travail fonctionne le mieux ? Quel domaine souhaites-tu améliorer ?;Équilibre pro/perso;TRUE
-Qu'est-ce qui a été difficile cette semaine ? Qu'as-tu appris ?;Équilibre pro/perso;TRUE
-Qu'est-ce qui te préoccupe ? Qu'as-tu en tête ?;Équilibre pro/perso;TRUE
-Y a-t-il quelque chose que tu faisais avant mais que tu n'as plus le temps de faire en ce moment ?;Équilibre pro/perso;TRUE
-Quelle est une chose peu coûteuse que nous pourrions faire pour améliorer notre environnement de bureau ?;Équilibre pro/perso;TRUE
-Quand est ta prochaine période de vacances ?;Équilibre pro/perso;TRUE
+À quelle heure de la journée tu es le plus efficace ? Est-ce que ton emploi du temps le reflète ?;Équilibre pro/perso;TRUE
+Quelle partie de ta routine de travail fonctionne bien ? Qu'est-ce que tu aimerais changer ?;Équilibre pro/perso;TRUE
+Qu'est-ce qui a été difficile cette semaine ? Qu'est-ce que ça t'a appris ?;Équilibre pro/perso;TRUE
+Qu'est-ce qui te préoccupe en ce moment ?;Équilibre pro/perso;TRUE
+Y a-t-il quelque chose que tu faisais avant et que tu n'as plus le temps de faire ?;Équilibre pro/perso;TRUE
+Quelle est une chose simple qu'on pourrait faire pour améliorer ton environnement de travail ?;Équilibre pro/perso;TRUE
 Quand as-tu pris tes dernières vacances ?;Équilibre pro/perso;TRUE
-Quand tu es bloqué sur quelque chose, quel est ton processus pour te débloquer ? Vers qui te tournes-tu pour obtenir de l'aide ?;Équilibre pro/perso;TRUE
-À quel moment de la journée te sens-tu le plus productif ?;Équilibre pro/perso;TRUE
-Quand sens-tu que ton énergie et ta concentration sont au plus bas ? Quels sont les changements qui pourraient être apportés pour que tu puisses tirer le meilleur parti d'une journée de travail ?;Équilibre pro/perso;TRUE
+Quand tu es bloqué·e, comment tu te débloque ? Vers qui tu te tournes ?;Équilibre pro/perso;TRUE
+À quel moment de la journée tu te sens le plus productif·ve ?;Équilibre pro/perso;TRUE
+Quand ton énergie est au plus bas, qu'est-ce qui t'aiderait à mieux passer la journée ?;Équilibre pro/perso;TRUE
+Qu'est-ce qui te redonne de l'énergie après une semaine difficile ?;Équilibre pro/perso;TRUE
+Est-ce qu'il t'arrive de te sentir coupable de décrocher en dehors des heures de travail ?;Équilibre pro/perso;TRUE
+Est-ce qu'il t'arrive de faire un bon travail sans que personne ne le remarque ? Comment tu vis ça ?;Reconnaissance;TRUE
+Quelle forme de reconnaissance compte le plus pour toi ?;Reconnaissance;TRUE
