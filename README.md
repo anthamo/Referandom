@@ -32,7 +32,6 @@ Application statique, aucune dépendance serveur.
 - `Carrière`
 - `Équilibre pro/perso`
 - `Ton manager`
-- `Reconnaissance` (questions réservées au bouton "J'ai de la chance")
 
 Mettre `Afficher` à `FALSE` pour masquer une question sans la supprimer.
 
