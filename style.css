@@ -36,15 +36,6 @@ body {
     box-shadow: 0 1px 3px rgba(20, 24, 40, 0.04);
 }
 
-#intro {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--muted);
-    margin: 0 0 18px;
-    text-wrap: pretty;
-}
-
 /* ---------- Boutons catégories + chance (une seule ligne) ---------- */
 #button-container {
     display: flex;

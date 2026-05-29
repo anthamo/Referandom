@@ -94,7 +94,7 @@ function passerQuestion() {
     afficher(tirer(pool, currentText));
     passUsed = true;
     passer.disabled = true;
-    passHint.textContent = "Esquive utilisée";
+    passHint.textContent = "Plus d'esquive, à toi de jouer !";
 }
 
 // ---- Init ----
