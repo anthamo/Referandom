@@ -43,4 +43,4 @@ Mettre `Afficher` à `FALSE` pour masquer une question sans la supprimer.
 ## Intégration Notion
 
 L'app est conçue pour fonctionner en embed Notion via iframe. 
-Coller l'URL `URL` dans un bloc `/embed` de Notion.
+Coller `https://anthamo.github.io/Referandom/` dans un bloc `/embed` de Notion.
