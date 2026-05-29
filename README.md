@@ -38,6 +38,17 @@ Application statique, aucune dépendance serveur.
 
 Mettre `Afficher` à `FALSE` pour masquer une question sans la supprimer.
 
+## Contribuer
+
+Les questions sont le cœur de l'outil — et elles peuvent toujours être améliorées.
+
+Si tu utilises Referandom et que tu as des questions à proposer, des formulations à améliorer, ou des catégories à suggérer : ouvre une [issue](https://github.com/anthamo/anthamo.github.io/issues) ou soumets une pull request en éditant directement `questions.csv`.
+
+Quelques critères pour qu'une question soit pertinente :
+- Elle ne trouve pas sa réponse en 5 secondes
+- Elle ouvre un sujet qu'on n'aurait pas abordé spontanément
+- Elle fonctionne quel que soit le secteur ou le niveau hiérarchique
+
 ## Intégration Notion
 
 L'app est conçue pour fonctionner en embed Notion via iframe. Coller l'URL dans un bloc `/embed` de Notion.
