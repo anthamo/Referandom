@@ -1,5 +1,7 @@
 # Referandom
 
+![Aperçu de Referandom](screenshot.png)
+
 Les 1-1 entre référant et référé dérivent facilement vers l'opérationnel. Les sujets du moment, les blocages immédiats. Ce qui compte vraiment — la progression, l'équilibre, la relation elle-même — passe rarement en premier.
 
 Referandom tire une question au hasard dans une base thématique. Pas de question prévue, pas de question contrôlée : c'est précisément ce qui force l'ouverture.
