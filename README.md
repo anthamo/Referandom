@@ -27,7 +27,7 @@ Application statique.
 
 ## Contribution
 
-Les questions sont le cœur de l'outil. Si tu en as de meilleures à proposer, des formulations à retravailler ou des catégories à suggérer : ouvre une [issue](https://github.com/anthamo/anthamo.github.io/issues) ou soumets une pull request directement sur `questions.csv`.
+Les questions sont le cœur de l'outil. Si tu en as de meilleures à proposer, des formulations à retravailler ou des catégories à suggérer : ouvre une [issue](https://github.com/anthamo/Referandom/issues) ou soumets une pull request directement sur `questions.csv`.
 
 Une bonne question : elle ne trouve pas sa réponse en cinq secondes, elle ouvre un sujet qu'on n'aurait pas abordé spontanément, elle fonctionne quel que soit le secteur ou le niveau hiérarchique.
 #### Ajouter ou modifier des questions
