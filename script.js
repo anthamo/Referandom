@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 // ---- Éléments ----
 const questionContainer = document.getElementById("question-container");
 const questionElement = document.getElementById("question");
