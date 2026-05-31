@@ -8,7 +8,7 @@ Une question tirée au hasard pour donner de la profondeur à un 1-1.
 
 ## Pourquoi
 
-Les 1-1 entre référent et référé dérivent facilement vers l'opérationnel : les sujets du moment, les blocages immédiats. Pourtant, ce qui compte vraiment dans ce cadre, c'est la progression, l'équilibre, la relation elle-même.
+Les 1-1 entre un manager (ici appelé "référent") et la personne qu'il accompagne ("le référé") dérivent facilement vers l'opérationnel : les sujets du moment, les blocages immédiats. Pourtant, ce qui compte vraiment dans ce cadre, c'est la progression, l'équilibre, la relation elle-même.
 
 Referandom permet au référé de tirer une question au hasard dans une base thématique. Pas de question préparée, pas de réponse calibrée. C'est précisément ce qui force l'ouverture.
 
