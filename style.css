@@ -23,7 +23,8 @@ body {
     background-color: var(--bg);
     color: var(--ink);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Carte conteneur (le cadre du sketch) */
@@ -165,6 +166,43 @@ body {
     white-space: nowrap;
     text-align: right;
 }
+
+/* ---------- Footer crédit — discret, sous la carte ---------- */
+#credit {
+    width: 100%;
+    max-width: 720px;
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 12.5px;
+    color: var(--hint);
+}
+
+#credit a {
+    color: var(--hint);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+#credit a:hover {
+    color: var(--turquoise);
+    border-bottom-color: var(--turquoise);
+}
+
+#credit .gh {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border-bottom: none;
+}
+
+#credit .gh svg { display: block; }
+
+#credit .sep { color: var(--card-border); }
 
 /* ---------- Étroit (≤ 430px) : on garde tout lisible ---------- */
 @media (max-width: 480px) {
