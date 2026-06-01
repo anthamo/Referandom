@@ -22,7 +22,7 @@ Qu'ont fait tes anciens managers que tu aimerais que je fasse ou que j'évite ?;
 Y a-t-il des situations récentes où j'aurais pu t'aider davantage mais où je ne l'ai pas fait ?;Ton manager;TRUE
 Quel est le plus grand défi que tu affrontes en ce moment ?;Ton manager;TRUE
 De quoi as-tu le plus besoin de ma part en ce moment ?;Ton manager;TRUE
-Mon niveau d'implication dans ton quotidien te convient-il ? Trop présent, pas assez ?;Ton manager;TRUE
+Mon niveau d'implication dans ton quotidien te convient-il ? Trop présent·e, pas assez ?;Ton manager;TRUE
 Qu'aimerais-tu savoir sur moi que tu ne sais pas encore ?;Ton manager;TRUE
 Qu'aimerais-tu voir changer dans nos 1:1 pour qu'ils te soient plus utiles ?;Ton manager;TRUE
 Qu'est-ce que je fais bien en tant que référent et que tu aimerais que je continue ?;Ton manager;TRUE
@@ -46,7 +46,7 @@ Y a-t-il une autre manière de développer tes compétences en dehors des format
 Y a-t-il un aspect de ton travail sur lequel tu aimerais plus de coaching ?;Carrière;TRUE
 Parle-moi de quelque chose de nouveau que tu as appris depuis notre dernière rencontre.;Carrière;TRUE
 Quelles actions vas-tu entreprendre avant notre prochain 1-to-1 pour avancer sur X ? (Discuter et se mettre d'accord sur les actions que je prendrai pour t'aider également.);Carrière;FALSE
-Quels sont les projets dont tu es le plus fier, et qu'aimerais-tu faire ensuite ?;Carrière;TRUE
+Quels sont les projets dont tu es le plus fier·ère, et qu'aimerais-tu faire ensuite ?;Carrière;TRUE
 Quelles nouvelles compétences aimerais-tu développer au travail ? Qu'est-ce qui t'attire dans ces compétences ?;Carrière;TRUE
 Quels sont tes grands rêves dans la vie ? Fais-tu des progrès pour les réaliser ?;Carrière;TRUE
 Quels sont tes objectifs à long terme ? Y as-tu réfléchi récemment ?;Carrière;TRUE
@@ -95,7 +95,7 @@ Qu'est-ce qu'on pourrait changer au travail qui améliorerait le reste de ta vie
 Que fais-tu quand tu te sens à plat ou démotivé·e ?;Équilibre pro/perso;TRUE
 Qu'est-ce qui t'enthousiasme le plus dans ton travail en ce moment ?;Équilibre pro/perso;TRUE
 Quels obstacles rencontres-tu en ce moment ?;Équilibre pro/perso;TRUE
-À quelle heure de la journée tu es le plus efficace ? Est-ce que ton emploi du temps le reflète ?;Équilibre pro/perso;TRUE
+À quelle heure de la journée travailles-tu le plus efficacement ? Est-ce que ton emploi du temps le reflète ?;Équilibre pro/perso;TRUE
 Quelle partie de ta routine de travail fonctionne bien ? Qu'est-ce que tu aimerais changer ?;Équilibre pro/perso;TRUE
 Qu'est-ce qui a été difficile cette semaine ? Qu'est-ce que ça t'a appris ?;Équilibre pro/perso;TRUE
 Qu'est-ce qui te préoccupe en ce moment ?;Équilibre pro/perso;TRUE
