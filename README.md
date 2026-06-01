@@ -25,7 +25,9 @@ Une question s'affiche. Le référé peut l'esquiver une fois par session. Esqui
 
 ## Intégration Notion
 
-L'app est pensée pour vivre dans un template de 1-1, embarquée via iframe. Coller `https://anthamo.github.io/Referandom/` dans un bloc `/embed` de Notion. En déroulant l'agenda du 1-1, on tombe dessus : l'outil crée son moment au lieu d'attendre qu'on y pense.
+L'app est pensée pour vivre dans un template de 1-1, embarquée via iframe. Coller `https://anthamo.github.io/Referandom/` dans un bloc `/embed` de Notion. 
+
+En déroulant l'agenda du 1-1, on tombe dessus : l'outil crée son moment au lieu d'attendre qu'on y pense.
 
 ## Lancer en local
 
