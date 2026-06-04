@@ -25,6 +25,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* TEMP screenshot: centrage vertical — rollback après captation */
+    justify-content: center;
+    min-height: 100vh;
 }
 
 /* Carte conteneur (le cadre du sketch) */
