@@ -131,11 +131,12 @@
 body {
     font-family: 'Archivo', sans-serif;
     margin: 0;
-    padding: 12px 16px;
+    min-height: 100vh;
+    padding: 20px 18px;
     background-color: var(--bg-base);
     position: relative;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     overflow-x: hidden;
     transition: background-color 0.3s;
@@ -176,12 +177,12 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    margin-bottom: 8px;
+    margin-bottom: 14px;
 }
 
 #intro {
     margin: 0;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 800;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -191,8 +192,8 @@ body {
 /* ===== Toggle thème ===== */
 #theme-toggle {
     flex: none;
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -224,10 +225,10 @@ body {
     flex: 1;
     border: none;
     cursor: pointer;
-    padding: 9px 8px;
+    padding: 11px 10px;
     line-height: 1.15;
     font-weight: 800;
-    font-size: 11.5px;
+    font-size: 12.5px;
     letter-spacing: 0.01em;
     text-transform: uppercase;
     text-align: center;
@@ -281,7 +282,7 @@ body {
 
 /* ===== Zone question ===== */
 #question-container {
-    margin-top: 10px;
+    margin-top: 16px;
     display: none;
 }
 #question-container.is-visible { display: block; }
@@ -294,14 +295,14 @@ body {
     font-weight: 900;
     letter-spacing: 0.10em;
     text-transform: uppercase;
-    padding: 2px 7px;
+    padding: 2px 8px;
     transform: rotate(-2deg);
     box-shadow: 3px 3px 0 var(--badge-shadow);
     white-space: nowrap;
 }
 
 #question {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 1.4;
     color: var(--text-strong);
@@ -314,22 +315,22 @@ body {
 .pass-row {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 12px;
+    margin-top: 14px;
 }
 
 #passer {
     font-family: inherit;
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 7px;
     border: none;
     cursor: pointer;
-    padding: 6px 12px;
+    padding: 7px 14px;
     border-radius: 3px;
     background-color: transparent;
     color: var(--passer-color);
-    font-size: 11px;
+    font-size: 11.5px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.04em;
@@ -348,7 +349,7 @@ body {
 }
 
 #pass-hint {
-    font-size: 11px;
+    font-size: 11.5px;
     font-weight: 800;
     letter-spacing: 0.02em;
     text-transform: uppercase;
@@ -360,14 +361,14 @@ body {
 #credits {
     position: relative;
     z-index: 2;
-    margin-top: 14px;
-    padding-top: 10px;
+    margin-top: 20px;
+    padding-top: 12px;
     border-top: 1px solid var(--footer-border);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
-    font-size: 10px;
+    font-size: 10.5px;
     font-weight: 700;
     letter-spacing: 0.06em;
     text-transform: uppercase;
