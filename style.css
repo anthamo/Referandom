@@ -1,137 +1,322 @@
 /* SPDX-License-Identifier: MIT */
 :root {
-    --turquoise: #20B2AA;
-    --turquoise-dark: #1c9d96;
-    --bg: #f4f5f9;
+    /* ===== Thème DARK (défaut) ===== */
+    --bg-base: #15012b;
+    --bg-deep: #08000f;
+
+    --accent-rgb: 198 255 0;            /* lime */
+    --accent: rgb(var(--accent-rgb));
+    --accent-ink: #15012b;              /* texte posé sur l'aplat d'accent */
+    --accent2-rgb: 198 255 0;           /* 2e accent (orange en light) */
+
     --blue: #4285f4;
-    --blue-dark: #357ae8;
-    --ink: #2b2b2b;
-    --muted: #5b6170;
-    --hint: #8a8f9c;
-    --card-border: #E3E5EE;
-    --divider: #ECEEF3;
-    --btn-border: #D5D8E0;
+    --blue-dark: #2f6fd6;
+    --blue-shadow: var(--bg-deep);
+
+    --text-strong: #ffffff;             /* question */
+    --intro-color: var(--accent);
+    --hint: #9a7fc0;
+
+    /* boutons thèmes (groupe) */
+    --cat-bg: rgb(var(--accent-rgb) / 0.06);
+    --cat-fg: #d6ff5e;
+    --cat-ring: rgb(var(--accent-rgb) / 0.55);
+    --cat-glow: rgb(var(--accent-rgb) / 0.14);
+    --cat-textshadow: rgb(var(--accent-rgb) / 0.40);
+    --cat-hover-bg: rgb(var(--accent-rgb) / 0.14);
+    --cat-hover-fg: #f3ffd0;
+    --cat-active-bg: var(--accent);
+    --cat-active-fg: var(--accent-ink);
+    --cat-active-ring: #ffffff;
+    --cat-active-glow: rgb(var(--accent-rgb) / 0.45);
+    /* 3e thème "Ton référent" — bi-ton (orange en light) */
+    --cat3-fg: var(--cat-fg);
+    --cat3-ring: var(--cat-ring);
+
+    /* badge catégorie */
+    --badge-bg: var(--accent);
+    --badge-fg: var(--accent-ink);
+    --badge-shadow: var(--bg-deep);
+
+    /* question */
+    --q-shadow: 0 2px 16px rgba(8, 0, 15, 0.45);
+
+    /* bouton Passer */
+    --passer-rgb: 198 255 0;
+    --passer-color: rgb(var(--passer-rgb));
+    --passer-ring: rgb(var(--passer-rgb) / 0.55);
+    --passer-glow: rgb(var(--passer-rgb) / 0.2);
+    --passer-hover-bg: rgb(var(--passer-rgb) / 0.1);
+    --passer-disabled-ring: rgb(var(--passer-rgb) / 0.3);
+
+    /* footer */
+    --footer-color: var(--hint);
+    --footer-border: rgb(var(--accent-rgb) / 0.16);
+    --footer-hover: var(--accent);
+
+    /* décor pleine page */
+    --decor:
+        radial-gradient(900px 720px at 16% 18%, rgba(198, 255, 0, 0.18), transparent 60%),
+        radial-gradient(950px 760px at 86% 22%, rgba(66, 133, 244, 0.18), transparent 60%),
+        radial-gradient(1000px 820px at 84% 84%, rgba(255, 46, 136, 0.22), transparent 60%),
+        radial-gradient(880px 720px at 14% 86%, rgba(0, 229, 255, 0.16), transparent 60%),
+        radial-gradient(1150px 950px at 50% 50%, rgba(122, 43, 255, 0.14), transparent 64%);
+    --dot-color: rgb(var(--accent-rgb) / 0.10);
+    --dot-blend: screen;
+
+    /* toggle */
+    --toggle-bg: rgb(var(--accent-rgb) / 0.08);
+    --toggle-ring: rgb(var(--accent-rgb) / 0.5);
+    --toggle-fg: var(--accent);
+}
+
+/* ===== Thème LIGHT — "Hot Magenta" ===== */
+[data-theme="light"] {
+    --bg-base: #fbf9f8;
+    --bg-deep: rgba(120, 10, 50, 0.20);
+
+    --accent-rgb: 255 46 136;           /* magenta */
+    --accent-ink: #ffffff;
+    --accent2-rgb: 255 122 26;          /* orange */
+
+    --text-strong: #2b0a1e;
+    --intro-color: #1a1320;             /* noir (demande) */
+    --hint: #e0186b;
+
+    --cat-bg: #ffffff;
+    --cat-fg: #d6145f;
+    --cat-ring: rgb(var(--accent-rgb) / 0.55);
+    --cat-glow: rgb(var(--accent-rgb) / 0);
+    --cat-textshadow: rgb(var(--accent-rgb) / 0);
+    --cat-hover-bg: #fff0f6;
+    --cat-hover-fg: #b80f50;
+    --cat-active-bg: rgb(var(--accent-rgb));
+    --cat-active-fg: #ffffff;
+    --cat-active-ring: #ffffff;
+    --cat-active-glow: rgb(var(--accent-rgb) / 0.4);
+    --cat3-fg: #e0560a;                 /* "Ton référent" en orange */
+    --cat3-ring: rgb(var(--accent2-rgb) / 0.6);
+
+    --badge-bg: rgb(var(--accent-rgb));
+    --badge-fg: #ffffff;
+    --badge-shadow: rgb(var(--accent2-rgb) / 0.55);
+
+    --q-shadow: none;
+
+    --passer-rgb: 255 46 136;           /* Passer magenta (demande) */
+    --passer-color: rgb(var(--passer-rgb));
+    --passer-ring: rgb(var(--passer-rgb) / 0.5);
+    --passer-glow: rgb(var(--passer-rgb) / 0);
+    --passer-hover-bg: rgb(var(--passer-rgb) / 0.08);
+    --passer-disabled-ring: rgb(var(--passer-rgb) / 0.3);
+
+    --footer-color: #d6145f;
+    --footer-border: rgb(var(--accent-rgb) / 0.22);
+    --footer-hover: #b80f50;
+
+    --decor:
+        radial-gradient(720px 580px at 6% 4%, rgba(255, 122, 26, 0.07), transparent 60%),
+        radial-gradient(760px 600px at 98% 92%, rgba(255, 46, 136, 0.08), transparent 62%);
+    --dot-color: rgba(20, 12, 30, 0.04);
+    --dot-blend: normal;
+
+    --toggle-bg: #ffffff;
+    --toggle-ring: rgb(var(--accent-rgb) / 0.5);
+    --toggle-fg: #d6145f;
 }
 
 * { box-sizing: border-box; }
 
-/* Notion-embed friendly : hauteur auto, pas de min-height:100vh, pas de overflow:hidden. */
+/* Embed-Notion : hauteur auto, pas de overflow:hidden sur body. */
 body {
-    font-family: 'Maven Pro', sans-serif;
+    font-family: 'Archivo', sans-serif;
     margin: 0;
-    padding: 24px 16px;
-    background-color: var(--bg);
-    color: var(--ink);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* TEMP screenshot: centrage vertical — rollback après captation */
-    justify-content: center;
     min-height: 100vh;
+    padding: 28px 18px;
+    background-color: var(--bg-base);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    transition: background-color 0.3s;
 }
 
-/* Carte conteneur (le cadre du sketch) */
+/* ===== Décor pleine page (vrai élément, rendu fiable) ===== */
+#bg-decor {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background: var(--decor);
+}
+#bg-decor::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, var(--dot-color) 1px, transparent 1.4px);
+    background-size: 7px 7px;
+    mix-blend-mode: var(--dot-blend);
+}
+
+/* ===== Interface = contenu centré, posé sur le décor ===== */
 #app {
+    position: relative;
+    z-index: 1;
     width: 100%;
-    max-width: 720px;
-    background-color: #fff;
-    border: 1px solid var(--card-border);
-    border-radius: 16px;
-    padding: 24px;
-    box-shadow: 0 1px 3px rgba(20, 24, 40, 0.04);
+    max-width: 780px;
 }
 
-/* ---------- Boutons catégories + chance (une seule ligne) ---------- */
+#app-head,
+#button-container,
+#question-container { position: relative; z-index: 2; }
+
+/* En-tête : intro à gauche, toggle à droite (au-dessus des boutons) */
+#app-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+
+#intro {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--intro-color);
+}
+
+/* ===== Toggle thème ===== */
+#theme-toggle {
+    flex: none;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: var(--toggle-bg);
+    color: var(--toggle-fg);
+    box-shadow: inset 0 0 0 1.5px var(--toggle-ring);
+    transition: background-color 0.18s, box-shadow 0.18s, transform 0.05s;
+}
+#theme-toggle:hover { background-color: var(--cat-hover-bg); }
+#theme-toggle:active { transform: translateY(1px); }
+#theme-toggle .ico-sun { display: none; }
+#theme-toggle .ico-moon { display: block; }
+[data-theme="light"] #theme-toggle .ico-sun { display: block; }
+[data-theme="light"] #theme-toggle .ico-moon { display: none; }
+
+/* ===== Boutons — une seule ligne ===== */
 #button-container {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 10px;
+    gap: 12px;
+    align-items: stretch;
 }
 
 .cat-btn,
 #boutonChance {
     font-family: inherit;
     flex: 1;
-    padding: 13px 12px;
-    border-radius: 10px;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 1.25;
-    white-space: nowrap;
+    border: none;
     cursor: pointer;
-    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+    padding: 14px 10px;
+    line-height: 1.15;
+    font-weight: 800;
+    font-size: 12.5px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 3px;
+    transition: background-color 0.18s, color 0.18s, box-shadow 0.18s, transform 0.05s;
 }
 
+/* Thèmes = un GROUPE homogène */
 .cat-btn {
-    background-color: #fff;
-    color: var(--turquoise);
-    border: 1px solid var(--turquoise);
+    background-color: var(--cat-bg);
+    color: var(--cat-fg);
+    box-shadow: inset 0 0 0 1.6px var(--cat-ring), 0 0 16px var(--cat-glow);
+    text-shadow: 0 0 10px var(--cat-textshadow);
 }
 
 .cat-btn:hover {
-    background-color: var(--turquoise);
-    color: #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    background-color: var(--cat-hover-bg);
+    color: var(--cat-hover-fg);
 }
 
 .cat-btn:active { transform: translateY(1px); }
 
-/* Bouton "J'ai de la chance" — bleu Google, inchangé (intentionnel) */
+/* 3e thème "Ton référent" — bi-ton */
+.cat-btn[data-cat="Ton manager"] {
+    color: var(--cat3-fg);
+    box-shadow: inset 0 0 0 1.6px var(--cat3-ring), 0 0 16px var(--cat-glow);
+}
+
+/* Thème sélectionné = chip plein */
+.cat-btn.is-active,
+.cat-btn.is-active:hover {
+    background-color: var(--cat-active-bg);
+    color: var(--cat-active-fg);
+    box-shadow: inset 0 0 0 2px var(--cat-active-ring), 0 0 26px var(--cat-active-glow);
+    text-shadow: none;
+}
+
+/* « J'ai de la chance » = seul bouton PLEIN, bleu Google (le héros) */
 #boutonChance {
-    border: none;
     background-color: var(--blue);
     color: #fff;
+    box-shadow: 5px 5px 0 var(--blue-shadow), 0 0 28px rgba(66, 133, 244, 0.55);
 }
 
 #boutonChance:hover {
     background-color: var(--blue-dark);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    box-shadow: 5px 5px 0 var(--blue-shadow), 0 0 34px rgba(66, 133, 244, 0.7);
 }
 
-/* ---------- Zone question — barre d'accent à gauche, posée à plat ---------- */
+#boutonChance:active { transform: translateY(1px); }
+
+/* ===== Zone question ===== */
 #question-container {
-    margin-top: 18px;
-    padding: 4px 0 4px 16px;
-    border-left: 3px solid var(--turquoise);
+    margin-top: 24px;
     display: none;
-    flex-direction: column;
 }
-
-#question-container.is-visible { display: flex; }
+#question-container.is-visible { display: block; }
 
 #category-badge {
+    display: inline-block;
+    background-color: var(--badge-bg);
+    color: var(--badge-fg);
     font-size: 11px;
-    font-weight: 600;
+    font-weight: 900;
     letter-spacing: 0.10em;
     text-transform: uppercase;
-    color: var(--turquoise);
+    padding: 3px 9px;
+    transform: rotate(-2deg);
+    box-shadow: 4px 4px 0 var(--badge-shadow);
     white-space: nowrap;
-    align-self: flex-start;
 }
 
 #question {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: 600;
     line-height: 1.45;
-    color: var(--ink);
-    margin: 10px 0 0;
+    color: var(--text-strong);
+    margin: 16px 0 0;
+    text-shadow: var(--q-shadow);
     text-wrap: pretty;
 }
 
-.divider {
-    border: none;
-    border-top: 1px solid var(--divider);
-    width: 100%;
-    margin: 16px 0;
-}
-
-/* ---------- Ligne Passer + indice ---------- */
+/* ===== Passer + indice ===== */
 .pass-row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    margin-top: 16px;
+    gap: 14px;
+    margin-top: 22px;
 }
 
 #passer {
@@ -139,78 +324,86 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 9px 16px;
-    border: 1px solid var(--btn-border);
-    border-radius: 8px;
-    background-color: #fff;
-    color: var(--muted);
-    font-size: 14px;
-    font-weight: 600;
+    border: none;
     cursor: pointer;
-    transition: border-color 0.2s, color 0.2s, background-color 0.2s;
+    padding: 9px 16px;
+    border-radius: 3px;
+    background-color: transparent;
+    color: var(--passer-color);
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    box-shadow: inset 0 0 0 1.5px var(--passer-ring), 0 0 16px var(--passer-glow);
+    transition: background-color 0.18s, box-shadow 0.18s, opacity 0.18s;
 }
 
-#passer .ico { flex: none; }
-
-#passer:hover:not(:disabled) {
-    border-color: var(--turquoise);
-    color: var(--turquoise);
-}
+#passer .ico { flex: none; transition: transform 0.3s ease; }
+#passer:hover:not(:disabled) { background-color: var(--passer-hover-bg); }
+#passer:hover:not(:disabled) .ico { transform: translateX(2px); }
 
 #passer:disabled {
-    opacity: 0.45;
+    opacity: 0.35;
     cursor: not-allowed;
+    box-shadow: inset 0 0 0 1.5px var(--passer-disabled-ring);
 }
 
 #pass-hint {
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
     color: var(--hint);
     white-space: nowrap;
-    text-align: right;
 }
 
-/* ---------- Footer crédit — discret, sous la carte ---------- */
-#credit {
-    width: 100%;
-    max-width: 720px;
-    margin-top: 14px;
+/* ===== Footer / crédits ===== */
+#credits {
+    position: relative;
+    z-index: 2;
+    margin-top: 40px;
+    padding-top: 22px;
+    border-top: 1px solid var(--footer-border);
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    align-items: center;
     gap: 10px;
-    font-size: 12.5px;
-    color: var(--hint);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--footer-color);
 }
 
-#credit a {
-    color: var(--hint);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: color 0.2s, border-color 0.2s;
-}
-
-#credit a:hover {
-    color: var(--turquoise);
-    border-bottom-color: var(--turquoise);
-}
-
-#credit .gh {
+#credits a {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    border-bottom: none;
+    gap: 7px;
+    color: var(--footer-color);
+    text-decoration: none;
+    transition: color 0.18s, text-shadow 0.18s;
 }
 
-#credit .gh svg { display: block; }
+#credits a .gh { flex: none; }
 
-#credit .sep { color: var(--card-border); }
+#credits a:hover {
+    color: var(--footer-hover);
+    text-shadow: 0 0 12px var(--footer-border);
+}
 
-/* ---------- Étroit (≤ 430px) : on garde tout lisible ---------- */
-@media (max-width: 480px) {
+#credits .sep { opacity: 0.5; }
+
+/* ===== Responsive : iframe étroite / mobile → boutons 2×2 ===== */
+@media (max-width: 560px) {
+    #app { padding: 24px 22px 26px; }
     #button-container { flex-wrap: wrap; }
     .cat-btn,
-    #boutonChance { flex: 1 1 calc(50% - 5px); white-space: normal; padding: 12px 8px; font-size: 12px; }
-    #question { font-size: 17px; }
+    #boutonChance { flex: 1 1 calc(50% - 6px); }
+    #question { font-size: 22px; }
+}
+
+@media (max-width: 360px) {
+    #question { font-size: 20px; }
+    .cat-btn,
+    #boutonChance { font-size: 11.5px; padding: 13px 8px; }
 }

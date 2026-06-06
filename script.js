@@ -72,6 +72,7 @@ function reinitEsquive() {
 function afficherQuestionAleatoire(categorie) {
     mode = "category";
     currentCategory = categorie;
+    setActiveButton(categorie);
     const pool = questions.filter(q => q.Catégorie === categorie && q.Afficher);
     afficher(tirer(pool));
     reinitEsquive();
@@ -80,9 +81,17 @@ function afficherQuestionAleatoire(categorie) {
 function afficherQuestionAleatoireToutesCategories() {
     mode = "lucky";
     currentCategory = null;
+    setActiveButton(null);
     const pool = questions.filter(q => q.Afficher);
     afficher(tirer(pool));
     reinitEsquive();
+}
+
+// Allume le bouton de catégorie correspondant (rien en mode "chance")
+function setActiveButton(categorie) {
+    document.querySelectorAll(".cat-btn").forEach(btn => {
+        btn.classList.toggle("is-active", btn.dataset.cat === categorie);
+    });
 }
 
 // ---- Passer (1 esquive par session de bouton) ----
@@ -106,3 +115,10 @@ document.querySelectorAll(".cat-btn").forEach(btn => {
 });
 boutonChance.addEventListener("click", afficherQuestionAleatoireToutesCategories);
 passer.addEventListener("click", passerQuestion);
+
+// ---- Toggle thème (dark ⇄ light) — pas de localStorage (conforme embed Notion) ----
+const themeToggle = document.getElementById("theme-toggle");
+themeToggle.addEventListener("click", () => {
+    const root = document.documentElement;
+    root.setAttribute("data-theme", root.getAttribute("data-theme") === "light" ? "dark" : "light");
+});
