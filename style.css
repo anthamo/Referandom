@@ -132,7 +132,7 @@ body {
     font-family: 'Archivo', sans-serif;
     margin: 0;
     min-height: 100vh;
-    padding: 20px 18px;
+    padding: 28px 18px;
     background-color: var(--bg-base);
     position: relative;
     display: flex;
@@ -167,33 +167,15 @@ body {
     max-width: 780px;
 }
 
-#app-head,
 #button-container,
 #question-container { position: relative; z-index: 2; }
 
-/* En-tête : intro à gauche, toggle à droite (au-dessus des boutons) */
-#app-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    margin-bottom: 14px;
-}
-
-#intro {
-    margin: 0;
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--intro-color);
-}
-
-/* ===== Toggle thème ===== */
+/* ===== Toggle thème (dans le footer) ===== */
 #theme-toggle {
     flex: none;
-    width: 36px;
-    height: 36px;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -282,7 +264,7 @@ body {
 
 /* ===== Zone question ===== */
 #question-container {
-    margin-top: 16px;
+    margin-top: 22px;
     display: none;
 }
 #question-container.is-visible { display: block; }
@@ -316,7 +298,7 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-top: 14px;
+    margin-top: 16px;
 }
 
 #passer {
@@ -361,7 +343,7 @@ body {
 #credits {
     position: relative;
     z-index: 2;
-    margin-top: 20px;
+    margin-top: 22px;
     padding-top: 12px;
     border-top: 1px solid var(--footer-border);
     display: flex;
