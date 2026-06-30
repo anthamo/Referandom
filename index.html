@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <!-- SPDX-License-Identifier: MIT -->
+<!-- Design "Acid Pop / sticker" aligné sur le design system Check-in 1:1.
+     Mono-thème light "Hot Magenta", ombre dure (zéro flou) réservée à la carte
+     question, boutons secondaires plats. Styles dans style.css.
+     Réutilise script.js + questions.csv. Le toggle thème reste dans le DOM en
+     `hidden` car script.js attache un handler dessus (thème unique désormais). -->
 <html lang="fr" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Referandom</title>
-    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="bg-decor"></div>
@@ -22,14 +27,16 @@
         </div>
 
         <div id="question-container">
-            <span id="category-badge"></span>
-            <p id="question"></p>
+            <div class="q-card">
+                <span id="category-badge"></span>
+                <p id="question"></p>
+            </div>
             <div class="pass-row">
+                <span id="pass-hint"></span>
                 <button id="passer" type="button">
                     <svg class="ico" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="13 19 22 12 13 5"></polygon><polygon points="2 19 11 12 2 5"></polygon></svg>
                     <span>Passer</span>
                 </button>
-                <span id="pass-hint"></span>
             </div>
         </div>
 
@@ -40,10 +47,7 @@
             </a>
             <span class="sep" aria-hidden="true">•</span>
             <a href="https://github.com/anthamo/Referandom/issues" target="_blank" rel="noopener">Proposer une question</a>
-            <button id="theme-toggle" type="button" aria-label="Changer de thème" title="Changer de thème">
-                <svg class="ico-moon" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-                <svg class="ico-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"></circle><path d="M12 2v2M12 20v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M2 12h2M20 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"></path></svg>
-            </button>
+            <button id="theme-toggle" type="button" aria-label="Changer de thème" hidden></button>
         </footer>
     </div>
 

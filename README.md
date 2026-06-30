@@ -73,5 +73,3 @@ Application statique, sans dépendance de build.
 ## Licence
 
 [MIT](LICENSE). Libre d'usage, de modification et de partage.
-
-La base de questions (`questions.csv`) est couverte par la même licence MIT : libre de la reprendre, l'adapter et la partager.

@@ -1,128 +1,35 @@
 /* SPDX-License-Identifier: MIT */
-:root {
-    /* ===== Thème DARK (défaut) ===== */
-    --bg-base: #15012b;
-    --bg-deep: #08000f;
+/* Design "Acid Pop / sticker" aligné sur le design system Check-in 1:1 (../DESIGN.md).
+   Mono-thème light "Hot Magenta", ombre dure (zéro flou) réservée à la carte
+   question, boutons secondaires plats. */
 
-    --accent-rgb: 198 255 0;            /* lime */
+:root {
+    --bg-base: #fbf9f8;
+
+    --accent-rgb: 255 46 136;           /* magenta */
     --accent: rgb(var(--accent-rgb));
-    --accent-ink: #15012b;              /* texte posé sur l'aplat d'accent */
-    --accent2-rgb: 198 255 0;           /* 2e accent (orange en light) */
+    --accent2-rgb: 255 122 26;          /* orange */
 
     --blue: #4285f4;
     --blue-dark: #2f6fd6;
-    --blue-shadow: var(--bg-deep);
-
-    --text-strong: #ffffff;             /* question */
-    --intro-color: var(--accent);
-    --hint: #9a7fc0;
-
-    /* boutons thèmes (groupe) */
-    --cat-bg: rgb(var(--accent-rgb) / 0.06);
-    --cat-fg: #d6ff5e;
-    --cat-ring: rgb(var(--accent-rgb) / 0.55);
-    --cat-glow: rgb(var(--accent-rgb) / 0.14);
-    --cat-textshadow: rgb(var(--accent-rgb) / 0.40);
-    --cat-hover-bg: rgb(var(--accent-rgb) / 0.14);
-    --cat-hover-fg: #f3ffd0;
-    --cat-active-bg: var(--accent);
-    --cat-active-fg: var(--accent-ink);
-    --cat-active-ring: #ffffff;
-    --cat-active-glow: rgb(var(--accent-rgb) / 0.45);
-    /* 3e thème "Ton référent" — bi-ton (orange en light) */
-    --cat3-fg: var(--cat-fg);
-    --cat3-ring: var(--cat-ring);
-
-    /* badge catégorie */
-    --badge-bg: var(--accent);
-    --badge-fg: var(--accent-ink);
-    --badge-shadow: var(--bg-deep);
-
-    /* question */
-    --q-shadow: 0 2px 16px rgba(8, 0, 15, 0.45);
-
-    /* bouton Passer */
-    --passer-rgb: 198 255 0;
-    --passer-color: rgb(var(--passer-rgb));
-    --passer-ring: rgb(var(--passer-rgb) / 0.55);
-    --passer-glow: rgb(var(--passer-rgb) / 0.2);
-    --passer-hover-bg: rgb(var(--passer-rgb) / 0.1);
-    --passer-disabled-ring: rgb(var(--passer-rgb) / 0.3);
-
-    /* footer */
-    --footer-color: var(--hint);
-    --footer-border: rgb(var(--accent-rgb) / 0.16);
-    --footer-hover: var(--accent);
-
-    /* décor pleine page */
-    --decor:
-        radial-gradient(900px 720px at 16% 18%, rgba(198, 255, 0, 0.18), transparent 60%),
-        radial-gradient(950px 760px at 86% 22%, rgba(66, 133, 244, 0.18), transparent 60%),
-        radial-gradient(1000px 820px at 84% 84%, rgba(255, 46, 136, 0.22), transparent 60%),
-        radial-gradient(880px 720px at 14% 86%, rgba(0, 229, 255, 0.16), transparent 60%),
-        radial-gradient(1150px 950px at 50% 50%, rgba(122, 43, 255, 0.14), transparent 64%);
-    --dot-color: rgb(var(--accent-rgb) / 0.10);
-    --dot-blend: screen;
-
-    /* toggle */
-    --toggle-bg: rgb(var(--accent-rgb) / 0.08);
-    --toggle-ring: rgb(var(--accent-rgb) / 0.5);
-    --toggle-fg: var(--accent);
-}
-
-/* ===== Thème LIGHT — "Hot Magenta" ===== */
-[data-theme="light"] {
-    --bg-base: #fbf9f8;
-    --bg-deep: rgba(120, 10, 50, 0.20);
-
-    --accent-rgb: 255 46 136;           /* magenta */
-    --accent-ink: #ffffff;
-    --accent2-rgb: 255 122 26;          /* orange */
 
     --text-strong: #2b0a1e;
-    --intro-color: #1a1320;             /* noir (demande) */
     --hint: #e0186b;
 
-    --cat-bg: #ffffff;
-    --cat-fg: #d6145f;
-    --cat-ring: rgb(var(--accent-rgb) / 0.55);
-    --cat-glow: rgb(var(--accent-rgb) / 0);
-    --cat-textshadow: rgb(var(--accent-rgb) / 0);
-    --cat-hover-bg: #fff0f6;
-    --cat-hover-fg: #b80f50;
-    --cat-active-bg: rgb(var(--accent-rgb));
-    --cat-active-fg: #ffffff;
-    --cat-active-ring: #ffffff;
-    --cat-active-glow: rgb(var(--accent-rgb) / 0.4);
-    --cat3-fg: #e0560a;                 /* "Ton référent" en orange */
-    --cat3-ring: rgb(var(--accent2-rgb) / 0.6);
-
-    --badge-bg: rgb(var(--accent-rgb));
-    --badge-fg: #ffffff;
-    --badge-shadow: rgb(var(--accent2-rgb) / 0.55);
-
-    --q-shadow: none;
-
-    --passer-rgb: 255 46 136;           /* Passer magenta (demande) */
-    --passer-color: rgb(var(--passer-rgb));
-    --passer-ring: rgb(var(--passer-rgb) / 0.5);
-    --passer-glow: rgb(var(--passer-rgb) / 0);
-    --passer-hover-bg: rgb(var(--passer-rgb) / 0.08);
-    --passer-disabled-ring: rgb(var(--passer-rgb) / 0.3);
+    /* primitives design system (patte sticker) */
+    --radius: 3px;
+    --shadow-hard: 4px 4px 0 var(--hint);
+    --shadow-badge: 3px 3px 0 rgb(var(--accent2-rgb) / 0.6);
+    --border-mag: 1.8px solid var(--accent);
 
     --footer-color: #d6145f;
     --footer-border: rgb(var(--accent-rgb) / 0.22);
     --footer-hover: #b80f50;
 
     --decor:
-        radial-gradient(720px 580px at 6% 4%, rgba(255, 122, 26, 0.07), transparent 60%),
-        radial-gradient(760px 600px at 98% 92%, rgba(255, 46, 136, 0.08), transparent 62%);
+        radial-gradient(720px 580px at 6% 4%, rgba(255, 122, 26, 0.08), transparent 60%),
+        radial-gradient(760px 600px at 98% 92%, rgba(255, 46, 136, 0.09), transparent 62%);
     --dot-color: rgba(20, 12, 30, 0.04);
-    --dot-blend: normal;
-
-    --toggle-bg: #ffffff;
-    --toggle-ring: rgb(var(--accent-rgb) / 0.5);
-    --toggle-fg: #d6145f;
 }
 
 * { box-sizing: border-box; }
@@ -132,17 +39,17 @@ body {
     font-family: 'Archivo', sans-serif;
     margin: 0;
     min-height: 100vh;
-    padding: 28px 18px;
+    padding: 24px 18px;
     background-color: var(--bg-base);
+    color: var(--text-strong);
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
-    transition: background-color 0.3s;
 }
 
-/* ===== Décor pleine page (vrai élément, rendu fiable) ===== */
+/* ===== Décor pleine page ===== */
 #bg-decor {
     position: fixed;
     inset: 0;
@@ -156,10 +63,9 @@ body {
     inset: 0;
     background-image: radial-gradient(circle, var(--dot-color) 1px, transparent 1.4px);
     background-size: 7px 7px;
-    mix-blend-mode: var(--dot-blend);
 }
 
-/* ===== Interface = contenu centré, posé sur le décor ===== */
+/* ===== Interface centrée ===== */
 #app {
     position: relative;
     z-index: 1;
@@ -170,34 +76,13 @@ body {
 #button-container,
 #question-container { position: relative; z-index: 2; }
 
-/* ===== Toggle thème (dans le footer) ===== */
-#theme-toggle {
-    flex: none;
-    margin-left: auto;
-    width: 30px;
-    height: 30px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    background-color: var(--toggle-bg);
-    color: var(--toggle-fg);
-    box-shadow: inset 0 0 0 1.5px var(--toggle-ring);
-    transition: background-color 0.18s, box-shadow 0.18s, transform 0.05s;
-}
-#theme-toggle:hover { background-color: var(--cat-hover-bg); }
-#theme-toggle:active { transform: translateY(1px); }
-#theme-toggle .ico-sun { display: none; }
-#theme-toggle .ico-moon { display: block; }
-[data-theme="light"] #theme-toggle .ico-sun { display: block; }
-[data-theme="light"] #theme-toggle .ico-moon { display: none; }
+/* toggle thème conservé pour script.js mais masqué (mono-thème) */
+#theme-toggle { display: none; }
 
 /* ===== Boutons — une seule ligne ===== */
 #button-container {
     display: flex;
-    gap: 8px;
+    gap: 9px;
     align-items: stretch;
 }
 
@@ -211,94 +96,106 @@ body {
     line-height: 1.15;
     font-weight: 800;
     font-size: 12.5px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
     text-align: center;
-    border-radius: 3px;
-    transition: background-color 0.18s, color 0.18s, box-shadow 0.18s, transform 0.05s;
+    border-radius: var(--radius);
+    transition: background-color 0.18s, color 0.18s, transform 0.05s;
 }
 
-/* Thèmes = un GROUPE homogène */
+/* Les 3 catégories = GROUPE SECONDAIRE plat : bague fine, pas d'ombre.
+   (Le traitement "sticker" ombre dure est réservé au héros + carte question.) */
 .cat-btn {
-    background-color: var(--cat-bg);
-    color: var(--cat-fg);
-    box-shadow: inset 0 0 0 1.6px var(--cat-ring), 0 0 16px var(--cat-glow);
-    text-shadow: 0 0 10px var(--cat-textshadow);
+    background-color: transparent;
+    color: var(--accent);
+    box-shadow: inset 0 0 0 1.5px rgb(var(--accent-rgb) / 0.55);
 }
 
 .cat-btn:hover {
-    background-color: var(--cat-hover-bg);
-    color: var(--cat-hover-fg);
+    background-color: #fff0f6;
+    box-shadow: inset 0 0 0 1.5px var(--accent);
 }
 
-.cat-btn:active { transform: translateY(1px); }
+.cat-btn:active { transform: translate(1px, 1px); }
 
-/* 3e thème "Ton référent" — bi-ton */
-.cat-btn[data-cat="Ton manager"] {
-    color: var(--cat3-fg);
-    box-shadow: inset 0 0 0 1.6px var(--cat3-ring), 0 0 16px var(--cat-glow);
-}
-
-/* Thème sélectionné = chip plein */
+/* Catégorie sélectionnée = chip plein magenta, sans ombre (reste un contrôle) */
 .cat-btn.is-active,
 .cat-btn.is-active:hover {
-    background-color: var(--cat-active-bg);
-    color: var(--cat-active-fg);
-    box-shadow: inset 0 0 0 2px var(--cat-active-ring), 0 0 26px var(--cat-active-glow);
-    text-shadow: none;
+    background-color: var(--accent);
+    color: #ffffff;
+    box-shadow: none;
 }
 
-/* « J'ai de la chance » = seul bouton PLEIN, bleu Google (le héros) */
+/* « J'ai de la chance » = seul bouton à part : aplat bleu, plat (pas d'ombre) */
 #boutonChance {
     background-color: var(--blue);
     color: #fff;
-    box-shadow: 5px 5px 0 var(--blue-shadow), 0 0 28px rgba(66, 133, 244, 0.55);
 }
-
-#boutonChance:hover {
-    background-color: var(--blue-dark);
-    box-shadow: 5px 5px 0 var(--blue-shadow), 0 0 34px rgba(66, 133, 244, 0.7);
-}
-
-#boutonChance:active { transform: translateY(1px); }
+#boutonChance:hover { background-color: var(--blue-dark); }
+#boutonChance:active { transform: translate(1px, 1px); }
 
 /* ===== Zone question ===== */
 #question-container {
-    margin-top: 22px;
+    margin-top: 26px;          /* marge pour le badge qui chevauche la carte */
     display: none;
 }
 #question-container.is-visible { display: block; }
 
+/* carte sticker autour de la question */
+.q-card {
+    position: relative;
+    background: #ffffff;
+    border: var(--border-mag);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-hard);
+    padding: 18px 20px 19px;
+}
+
 #category-badge {
+    position: absolute;
+    top: -12px;
+    left: 16px;
     display: inline-block;
-    background-color: var(--badge-bg);
-    color: var(--badge-fg);
+    background-color: var(--accent);
+    color: #ffffff;
     font-size: 10px;
     font-weight: 900;
     letter-spacing: 0.10em;
     text-transform: uppercase;
-    padding: 2px 8px;
+    padding: 3px 9px;
+    border-radius: var(--radius);
     transform: rotate(-2deg);
-    box-shadow: 3px 3px 0 var(--badge-shadow);
+    box-shadow: var(--shadow-badge);
     white-space: nowrap;
 }
+#category-badge:empty { display: none; }
 
 #question {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 600;
     line-height: 1.4;
     color: var(--text-strong);
-    margin: 8px 0 0;
-    text-shadow: var(--q-shadow);
+    margin: 0;
     text-wrap: pretty;
 }
 
-/* ===== Passer + indice ===== */
+/* ===== Esquive : Passer à droite, décompte lié à sa gauche ===== */
 .pass-row {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-top: 16px;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+#pass-hint {
+    font-size: 10.5px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--hint);
+    text-align: right;
+    line-height: 1.2;
 }
 
 #passer {
@@ -308,35 +205,27 @@ body {
     gap: 7px;
     border: none;
     cursor: pointer;
-    padding: 7px 14px;
-    border-radius: 3px;
-    background-color: transparent;
-    color: var(--passer-color);
+    padding: 8px 15px;
+    border-radius: var(--radius);
+    background-color: #ffffff;
+    color: var(--accent);
     font-size: 11.5px;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    box-shadow: inset 0 0 0 1.5px var(--passer-ring), 0 0 16px var(--passer-glow);
-    transition: background-color 0.18s, box-shadow 0.18s, opacity 0.18s;
+    box-shadow: inset 0 0 0 1.5px rgb(var(--accent-rgb) / 0.55);
+    transition: background-color 0.18s, box-shadow 0.18s, opacity 0.18s, transform 0.05s;
 }
 
 #passer .ico { flex: none; transition: transform 0.3s ease; }
-#passer:hover:not(:disabled) { background-color: var(--passer-hover-bg); }
+#passer:hover:not(:disabled) { background-color: #fff0f6; }
 #passer:hover:not(:disabled) .ico { transform: translateX(2px); }
+#passer:active:not(:disabled) { transform: translate(1px, 1px); }
 
 #passer:disabled {
-    opacity: 0.35;
+    opacity: 0.4;
     cursor: not-allowed;
-    box-shadow: inset 0 0 0 1.5px var(--passer-disabled-ring);
-}
-
-#pass-hint {
-    font-size: 11.5px;
-    font-weight: 800;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    color: var(--hint);
-    white-space: nowrap;
+    box-shadow: inset 0 0 0 1.6px rgb(var(--accent-rgb) / 0.35);
 }
 
 /* ===== Footer / crédits ===== */
@@ -363,28 +252,23 @@ body {
     gap: 7px;
     color: var(--footer-color);
     text-decoration: none;
-    transition: color 0.18s, text-shadow 0.18s;
+    transition: color 0.18s;
 }
 
 #credits a .gh { flex: none; }
-
-#credits a:hover {
-    color: var(--footer-hover);
-    text-shadow: 0 0 12px var(--footer-border);
-}
-
+#credits a:hover { color: var(--footer-hover); }
 #credits .sep { opacity: 0.5; }
 
 /* ===== Responsive : iframe étroite / mobile → boutons 2×2 ===== */
 @media (max-width: 560px) {
     #button-container { flex-wrap: wrap; }
     .cat-btn,
-    #boutonChance { flex: 1 1 calc(50% - 4px); }
+    #boutonChance { flex: 1 1 calc(50% - 4.5px); }
     #question { font-size: 17px; }
 }
 
 @media (max-width: 360px) {
     #question { font-size: 16px; }
     .cat-btn,
-    #boutonChance { font-size: 11px; padding: 8px 6px; }
+    #boutonChance { font-size: 11px; padding: 9px 6px; }
 }
